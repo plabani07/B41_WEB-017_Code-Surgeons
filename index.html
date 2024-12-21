@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Packages & Unique Stays</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style22.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <p>Welcome to Expedia.com. Continue to the <strong>India site</strong> at <a href="#">Expedia.co.in</a>.</p>
+    </div>
+    <nav class="main-nav">
+        <div class="logo">
+          <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27" alt="Expedia Logo">
+         <a href="">Shop Travel<i class="fa-solid fa-angle-down"></i></a>
+        </div>
+        <ul class="nav-links">
+         
+          <li class="applink"><i class="fa-solid fa-download"></i>Get the app</li>
+          <li>🌐 English</li>
+          <li><a href="https://apps.expediapartnercentral.com/en_US/list?utm_contentewd=pwa-header-btn&siteId=1&tpid=1&eapid=0&langId=1033&lasttouchMktgcode=direct">List your propperties </a> </li>
+          <li><a href="https://www.expedia.com/helpcenter/">Support</a></li>
+          <li>Trips</li>
+          <li><a href="sign.html">Sign in</a></li>
+        </ul>
+        </nav>
+        <hr>
+    <div class="breadcrumb">
+      <p>North America > United States of America > Illinois > Chicago</p>                            
+    </div>
+  </header>
+  <div class="table">
+    <div class="search-container">
+        <!-- Navigation Tabs -->
+        <nav class="nav-links" id="tabs">
+            <span class="active" onclick="showTab('stays')">Stays</span>
+            <span onclick="showTab('flights')">Flights</span>
+            <span onclick="showTab('cars')">Cars</span>
+            <span onclick="showTab('packages')">Packages</span>
+            <span onclick="showTab('things-to-do')">Things to do</span>
+            <span onclick="showTab('cruises')">Cruises</span>
+        </nav>
+    <div>
+        <hr>
+    </div>
+
+        <!-- Stays Section -->
+        <div class="search-bar" id="stays">
+            <div class="input-field">
+                <label for="destination">Where to?</label>
+                <select id="destination">
+                    <option value="">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                </select>
+            </div>
+            <div class="input-field">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="input-field">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout">
+            </div>
+            <div class="input-field">
+                <label>Travelers</label>
+                <select>
+                    <option>1 Room, 2 Adults</option>
+                    <option>2 Rooms, 4 Adults</option>
+                </select>
+            </div>
+            <button class="search-btn">Search</button>
+        </div>
+    </div>
+        <!-- Flights Section -->
+        <div class="search-bar hidden" id="flights">
+            <div class="input-field">
+                <label>From</label>
+                <input type="text" placeholder="Enter departure city">
+            </div>
+            <div class="input-field">
+                <label>To</label>
+                <input type="text" placeholder="Enter destination city">
+            </div>
+            <div class="input-field">
+                <label>Departure Date</label>
+                <input type="date">
+            </div>
+            <div class="input-field">
+                <label>Return Date</label>
+                <input type="date">
+            </div>
+            <button class="search-btn">Search Flights</button>
+        </div>
+
+        <!-- Cars Section -->
+        <div class="search-bar hidden" id="cars">
+            <div class="input-field">
+                <label>Pick-up Location</label>
+                <input type="text" placeholder="City or airport">
+            </div>
+            <div class="input-field">
+                <label>Pick-up Date</label>
+                <input type="date">
+            </div>
+            <div class="input-field">
+                <label>Drop-off Date</label>
+                <input type="date">
+            </div>
+            <button class="search-btn">Search Cars</button>
+        </div>
+
+        <!-- Packages Section -->
+        <div class="search-bar hidden" id="packages">
+            <div class="input-field">
+                <label>Destination</label>
+                <input type="text" placeholder="Enter a destination">
+            </div>
+            <div class="input-field">
+                <label>Start Date</label>
+                <input type="date">
+            </div>
+            <div class="input-field">
+                <label>End Date</label>
+                <input type="date">
+            </div>
+            <button class="search-btn">Search Packages</button>
+        </div>
+
+        <!-- Things to do Section -->
+        <div class="search-bar hidden" id="things-to-do">
+            <div class="input-field">
+                <label>Location</label>
+                <input type="text" placeholder="Enter a city or attraction">
+            </div>
+            <button class="search-btn">Find Activities</button>
+        </div>
+
+        <!-- Cruises Section -->
+        <div class="search-bar hidden" id="cruises">
+            <div class="input-field">
+                <label>Destination</label>
+                <input type="text" placeholder="Enter a destination">
+            </div>
+            <div class="input-field">
+                <label>Sail Date</label>
+                <input type="date">
+            </div>
+            <button class="search-btn">Search Cruises</button>
+        </div>
+    </div>
+    
+    <!--Karthik-->
+    <div id="kcontainer">
+        <!-- Header -->
+        <div class="k-header">
+           <img src="https://a.travel-assets.com/egds/marks/onekey_standard_always_light.svg" alt="">
+           <h5>Member save 10% or more on over 100,000 hotels with Member Prices, member save up to 30% when you add a hotel to flight</h5>
+           <a href="sign.html" class="sign-in">Sign In</a>
+           <a href="">Learn about One Key</a>
+       </div>
+   
+       <!-- horizontal-cards Section -->
+       <div class="horizontal-cards">
+           <div class="horizontal-card">
+               <div id="horizontaltext">
+                   <h5>Get our best deals on flights with Price Drop Protection</h5>
+                   <a href="#">Learn more →</a>
+               </div>
+               <img src="planeandgirl.png" alt="Flights">
+           </div>
+   
+           <div class="horizontal-card">
+               <div id="horizontaltext">
+                   <h5>Earn rewards on top of airline miles</h5>
+                   <a href="#">Learn more →</a>
+               </div>
+               <img src="suitcase.png" alt="Rewards">
+           </div>
+   
+           <div class="horizontal-card">
+               <div id="horizontaltext">
+                   <h5>Earn up to $400 in OneKeyCash™</h5>
+                   <a href="#">Learn more →</a>
+               </div>
+               <img src="keycard.jpg" alt="OneKeyCash">
+           </div>
+       </div>
+   
+       <div id="recent-searches">
+           <h1>Your recent searches</h1>
+           <div id="logo-search">
+               <div id="search-div">
+                   <div>
+                       <i class="fa-solid fa-building"></i>
+                   </div>
+                   <div>
+                        <h3>Stays in United States of America</h3>
+                       <p>Wed.JAn 1-Fri, Jan 3 2 travelers. 1 room</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   
+       <!-- Promo Section -->
+       <div class="promo-section1">
+           <div class="promo-text1">
+               <h3>NEW</h3>
+               <h2>Earn up to $400 in OneKeyCash™</h2>
+               <p>After qualifying purchases. Terms apply.</p>
+               <p>OneKeyCash is not redeemable for cash.</p>
+               <button>Learn more</button>
+               <div class="promo-image2">
+                   <img src="keynobackground.png" alt="Key Card" class="key-card-image">
+               </div>
+           </div>
+           <div class="promo-image1">
+               <img src="https://a.travel-assets.com/travel-assets-manager/ca44f761-d2eb-4ba7-b313-e4c96302ac06/EG-CC-HP-woman-on-the-beach.jpg?impolicy=resizecrop&rw=800&ra=fit" 
+                   alt="Promo Background">
+               <!-- Key Card Image Positioned at the Center -->  
+           </div>
+          
+       </div>
+   
+       <!-- Cards Section -->
+       <div class="kcarousel-container">
+           <button class="kcarousel-btn prev">&lt;</button>
+           <div class="kcarousel">
+               <div class="kcarousel-cards">
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&lodging=HOTEL_RESORT&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED">                    <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/65518b66-799d-4728-ad52-4d479ff78c46.jpeg?impolicy=resizecrop&rw=896&rh=590&cw=448&cx=-135" alt="Resort"></a>
+                       <div class="ktext-overlay">Resort</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&lodging=CHALET&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/PARTNER_HotelLe_CoucouMeribel_4.jpg?impolicy=fcrop&h=590&w=448&q=mediumHigh" alt="Chalet"></a>
+                       <div class="ktext-overlay">Chalet</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&lodging=HOUSE_BOAT&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/PARTNER_Houseboat_1_Denmark_01.jpg?impolicy=fcrop&h=590&w=448&q=mediumHigh" alt="House Boat"></a>
+                       <div class="ktext-overlay">House bot</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&amenities=SPA_ON_SITE&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/27/a63f5ab1-8592-4414-8a17-c2b3b2d29671.jpeg?impolicy=resizecrop&rw=896&rh=590&cw=448" alt="Spa"></a>
+                       <div class="ktext-overlay">Spa</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&lodging=CABIN&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/PARTNER_Cowboy_Village_Resort.jpg?impolicy=resizecrop&rw=896&rh=590&cw=448" alt="Cabin"></a>
+                       <div class="ktext-overlay">Cabin</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&amenities=HOT_TUB&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/0ca4d47a-be2c-4971-8282-3511f49607f1.jpeg?impolicy=resizecrop&rw=448&ch=590" alt="Hot tub"></a>
+                       <div class="ktext-overlay">Hot tub</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United+States+of+America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&amenities=OCEAN_VIEW"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/a6fd0a58-767c-4363-a3e4-ef774a03aa99.jpeg?impolicy=resizecrop&rw=896&rh=590&cw=448&cx=-100" alt="Ocean view"></a>
+                       <div class="ktext-overlay">Ocean view</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&lodging=CASTLE&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/PARTNER_Kilkea_Castle.jpg?impolicy=resizecrop&rw=896&rh=590&cw=448&cx=-35" alt="Castle"></a>
+                       <div class="ktext-overlay">Castle</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United+States+of+America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&amenities=PETS"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/d1e5d296-4bcb-4d1a-8848-9de6d9cea802.jpeg?impolicy=fcrop&h=590&w=448&q=mediumHigh" alt="Pet friendly"></a>
+                       <div class="ktext-overlay">Pet friendly</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&lodging=VILLA&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/VRBO_APFT2_BARCELONA_THERIN_HOUSE_1_1439.jpg?impolicy=fcrop&h=590&w=448&q=mediumHigh" alt="Villa"></a>
+                       <div class="ktext-overlay">Villa</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United%20States%20of%20America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&lodging=CONDO&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/094a1eca-57d2-4245-886b-0becd22dfb4d.jpeg?impolicy=resizecrop&rw=896&rh=590&cw=448&cx=55" alt="Condo"></a>
+                       <div class="ktext-overlay">Condo</div>
+                   </div>
+                   <div class="kcard-content">
+                       <a href="https://www.expedia.com/Hotel-Search?destination=United+States+of+America&regionId=201&latLong=37.090241%2C-95.712891&rooms=1&adults=2&startDate=2025-01-02&d1=2025-01-02&endDate=2025-01-04&d2=2025-01-04&lodging=COTTAGE" alt="Condo"><img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/PARTNER_Alltybrain_Farm_Cottages_.jpg?impolicy=fcrop&h=590&w=448&q=mediumHigh" alt=""></a>
+                       <div class="ktext-overlay">Cottage</div>
+                   </div>
+               </div>
+           </div>
+           <button class="kcarousel-btn next">&gt;</button>
+       </div>
+       
+       <div class="promo-section">
+           <img src="chinese.jpg" alt="City Image">
+           <div class="promo-text">
+               <h2>Savings in the city</h2>
+               <p>In the mood for adventure? Treat yourself to an unforgettable city break and save with Member Prices.</p>
+               <button>Unlock your deals</button>
+           </div>
+       </div>
+      </div>
+    <!---->
+      <div id="Acontainer2">
+        
+    <div class="acontainer">
+            <div class="section">
+            <h2>Explore holiday packages to popular destinations</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn">❮</button>
+                    <div class="card-carousel">
+                        <div class="card-grid">
+                            <!-- Add your cards here -->
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/22000000/21600000/21591900/21591820/91936e13_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Ambong Pool Villas + Flight</div>
+                                    <div class="card-details">
+                                        Pantai Tengah<br> 4.5 stars - 92/10 Wonderful (20)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                        Sun, 26 Jan – Thu, 30 Jan
+                                    </div>
+                                    <div class="price">₹70,372 per traveler</div>
+                                    <div class="discount">₹39,249 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/92000000/91670000/91662600/91662590/6d8794c6_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Wings by Croske Resort + Flight</div>
+                                    <div class="card-details">
+                                        Langkawi<br> 4 stars - 9/10 Wonderful (72)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                    </div>
+                                    <div class="price">₹55,000 per traveler</div>
+                                    <div class="discount">₹10,325 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/46000000/45660000/45660000/45659986/ab6b511e_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Luxury Pool Resort + Flight</div>
+                                    <div class="card-details">
+                                        Langkawi<br> 4.8 stars - Excellent (120)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                        Mon, 5 Feb – Fri, 9 Feb
+                                    </div>
+                                    <div class="price">₹80,000 per traveler</div>
+                                    <div class="discount">₹20,000 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/23000000/22700000/22699400/22699398/9eff7f77_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Holiday Retreat + Flight</div>
+                                    <div class="card-details">
+                                        Pantai Cenang<br> 4.3 stars - Very Good (80)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                        Fri, 15 Mar – Tue, 19 Mar
+                                    </div>
+                                    <div class="price">₹60,000 per traveler</div>
+                                    <div class="discount">₹15,000 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/104000000/103780000/103777000/103776909/89c426be_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">OYO 90967 Homestay Chalet Warisan Siti + Flight</div>
+                                    <div class="card-details">
+                                        Langkawi<br> 4.3 stars - Very Good (80)<br>
+                                        Pune (PNQ) - Langkawi (LGK)<br>
+                                        Fri, 15 Mar – Tue, 19 Mar
+                                    </div>
+                                    <div class="price">₹32,743 per traveler</div>
+                                    <div class="discount">9,590 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/9000000/8140000/8130100/8130026/36ae8ee7_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Ombak Villa Langkawi + Flight</div>
+                                    <div class="card-details">
+                                        Langkawi<br>4 stars - 7.6/10 Good (326)<br>
+                                        Pune (PNQ) - Langkawi (LGK)(LGK)<br>
+                                        Sun, 26 Jan - Thu. 30 Jan (4 nights)
+                                    </div>
+                                    <div class="price">₹39,409 per traveler</div>
+                                    <div class="discount">13,935 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/13000000/12080000/12072400/12072363/21695c6f_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Holiday Retreat + Flight</div>
+                                    <div class="card-details">
+                                        Pantai Cenang<br> 4.3 stars - Very Good (80)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                        Fri, 15 Mar – Tue, 19 Mar
+                                    </div>
+                                    <div class="price">₹60,000 per traveler</div>
+                                    <div class="discount">₹15,000 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/92000000/91950000/91949000/91948965/fc696cc5_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Holiday Retreat + Flight</div>
+                                    <div class="card-details">
+                                        Pantai Cenang<br> 4.3 stars - Very Good (80)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                        Fri, 15 Mar – Tue, 19 Mar
+                                    </div>
+                                    <div class="price">₹60,000 per traveler</div>
+                                    <div class="discount">₹15,000 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/104000000/103780000/103777000/103776909/89c426be_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Holiday Retreat + Flight</div>
+                                    <div class="card-details">
+                                        Pantai Cenang<br> 4.3 stars - Very Good (80)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                        Fri, 15 Mar – Tue, 19 Mar
+                                    </div>
+                                    <div class="price">₹60,000 per traveler</div>
+                                    <div class="discount">₹15,000 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/6000000/5270000/5265800/5265763/5eae04cf_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Holiday Retreat + Flight</div>
+                                    <div class="card-details">
+                                        Pantai Cenang<br> 4.3 stars - Very Good (80)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                        Fri, 15 Mar – Tue, 19 Mar
+                                    </div>
+                                    <div class="price">₹60,000 per traveler</div>
+                                    <div class="discount">₹15,000 off</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://images.trvl-media.com/lodging/4000000/3860000/3858900/3858832/f1781ae1_w.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Package Image">
+                                <div class="card-content">
+                                    <div class="card-title">Holiday Retreat + Flight</div>
+                                    <div class="card-details">
+                                        Pantai Cenang<br> 4.3 stars - Very Good (80)<br>
+                                        Pune (PNQ) – Langkawi (LGK)<br>
+                                        Fri, 15 Mar – Tue, 19 Mar
+                                    </div>
+                                    <div class="price">₹60,000 per traveler</div>
+                                    <div class="discount">₹15,000 off</div>
+                                </div>
+                            </div>
+                            <!-- Add more cards here -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next-btn">❯</button>
+                    <a href="https://www.expedia.co.in/flexibleshopping?origin=Pune%20(PNQ)&destination=Langkawi%20(LGK)&destinationId=6126505&adultsPerRoom%5B1%5D=2&fromDate=2025-01-26&toDate=2025-01-30&packageType=fh" class="button">See all packages</a>
+                </div>
+                <div>
+                    <h2>Explore these unique stays</h2>
+                    <div class="carousel-container2">
+                        <button class="carousel-btn2 prev-btn2">❮</button>
+                        <div class="card-carousel2">
+                            <div class="card-grid2">
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/37000000/36690000/36688700/36688619/56fa70b8.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">RAAS Chhatrasagar</div>
+                                        <div class="card-details2">
+                                            10 Exceptional<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/33000000/32460000/32459100/32459075/0c9e35f2.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">Tamode Palace homu</div>
+                                        <div class="card-details2">
+                                            10 Exceptional (23 reviews)<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/2000000/1180000/1177700/1177661/29c1116a.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">Tent City Narmada, Statue of Unity
+                                            Garudeshwar</div>
+                                        <div class="card-details2">
+                                            8 Very good good (16 reviews)l<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/40000000/39200000/39195300/39195221/e7eeaffa.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">The Laxmi Niwas Palace
+                                            Bikaner</div>
+                                        <div class="card-details2">
+                                            8.4 Very good good (59 reviews)<br>
+                                            32,614 total per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/1000000/860000/857300/857267/113a59dd.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">Rajwada Desert Camp by Park Tree Sam</div>
+                                        <div class="card-details2">
+                                            10 WOnderful (2 reviews)<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/31000000/30430000/30427300/30427202/0f39a017.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">RAAS Chhatrasagar</div>
+                                        <div class="card-details2">
+                                            10 Exceptional<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/43000000/42450000/42441700/42441630/w5472h3444x0y204-f8fc164f.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">RAAS Chhatrasagar</div>
+                                        <div class="card-details2">
+                                            10 Exceptional<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/18000000/17510000/17507000/17506993/b4571c71.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">RAAS Chhatrasagar</div>
+                                        <div class="card-details2">
+                                            10 Exceptional<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/19000000/18950000/18940900/18940822/13207c48.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">RAAS Chhatrasagar</div>
+                                        <div class="card-details2">
+                                            10 Exceptional<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/11000000/10980000/10971000/10970970/a7c7c27f.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">RAAS Chhatrasagar</div>
+                                        <div class="card-details2">
+                                            10 Exceptional<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/39000000/38970000/38968500/38968493/0490e105.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">RAAS Chhatrasagar</div>
+                                        <div class="card-details2">
+                                            10 Exceptional<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                    <img src="https://images.trvl-media.com/lodging/12000000/11300000/11298900/11298873/91949202.jpg?impolicy=fcrop&w=600&h=400&p=1&q=high" alt="Stay Image">
+                                    <div class="card-content2">
+                                        <div class="card-title2">RAAS Chhatrasagar</div>
+                                        <div class="card-details2">
+                                            10 Exceptional<br>
+                                            ₹40,000 per night<br>
+                                            Includes taxes & fees
+                                        </div>
+                                        <div class="price2">Member Price available</div>
+                                        <a href="https://www.expedia.co.in/user/signin?uurl=e3id%3Dredr%26rurl%3D%2FHotel-Search%3FstartDate%3D2025-01-10%26endDate%3D2025-01-12%26selected%3D36688619%26adults%3D%26children%3D" class="button2">Sign in for member price</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn2 next-btn2">❯</button>
+                    </div>
+                </div>
+                
+        
+  <div class="container">
+    <h1>Explore a world of travel with Expedia<h1>
+    <div class="scrollable-section">
+       
+        <h2>Hotel deals on domestic destinations</h2>
+        <div class="hotel-links">
+            <div>
+                <a href="https://www.expedia.co.in/Nangi-Hotels.d178955.Travel-Guide-Hotels">Nangi Hotels</a><br>
+                <a href="https://www.expedia.co.in/Mahabaleshwar-Hotels.d6126712.Travel-Guide-Hotels">Mahabaleshwar Hotels</a><br>
+                <a href="https://www.expedia.co.in/Delhi-Hotels.d180000.Travel-Guide-Hotels">Delhi Hotels</a><br>
+                <a href="https://www.expedia.co.in/Bengaluru-Hotels.d6053307.Travel-Guide-Hotels">Bangalore Hotels</a><br>
+                <a href="https://www.expedia.co.in/South-Goa-Hotels.d6138900.Travel-Guide-Hotels">South Goa Hotels</a>
+            </div>
+            <div>
+                <a href="https://www.expedia.co.in/Goa-Hotels.d6049928.Travel-Guide-Hotels">Goa Hotels</a><br>
+                <a href="https://www.expedia.co.in/Kutta-Hotels.d6126339.Travel-Guide-Hotels">Kutta Hotels</a><br>
+                <a href="https://www.expedia.co.in/Nandi-Hills-Hotels.d6347496.Travel-Guide-Hotels">Nandi Hills Hotels</a><br>
+                <a href="https://www.expedia.co.in/Nandi-Hills-Hotels.d6347496.Travel-Guide-Hotels">Ooty Hotels</a><br>
+                <a href="https://www.expedia.co.in/Manali-Hotels.d6135820.Travel-Guide-Hotels">Manali Hotels</a>
+            </div>
+        </div>
+        <h2>Book hotels internationally</h2>
+        <div class="hotel-links">
+            <div>
+                <a href="https://www.expedia.co.in/Maldives-Hotels.d6051084.Travel-Guide-Hotels">Maldives Hotels</a><br>
+                <a href="https://www.expedia.co.in/Maldives-Hotels.d6051084.Travel-Guide-Hotels">Koh Samui Islands Hotels</a><br>
+                <a href="https://www.expedia.co.in/Bali-Hotels.d602651.Travel-Guide-Hotels">Bali Hotels</a><br>
+                <a href="https://www.expedia.co.in/Langkawi-Hotels.d2062.Travel-Guide-Hotels">Langkawi Hotels</a><br>
+                <a href="https://www.expedia.co.in/Langkawi-Hotels.d2062.Travel-Guide-Hotels">Phuket Hotels</a>
+            </div>
+            <div>
+                <a href="https://www.expedia.co.in/Dubai-Hotels.d1079.Travel-Guide-Hotels">Dubai Hotels</a><br>
+                <a href="https://www.expedia.co.in/Singapore-Hotels.d180027.Travel-Guide-Hotels">Singapore Hotels</a><br>
+                <a href="https://www.expedia.co.in/London-Hotels.d178279.Travel-Guide-Hotels">London Hotels</a><br>
+                <a href="https://www.expedia.co.in/London-Hotels.d178279.Travel-Guide-Hotels">Pattaya Hotels</a><br>
+                <a href="https://www.expedia.co.in/London-Hotels.d178279.Travel-Guide-Hotels">New York Hotels</a>
+            </div>
+        </div>
+
+<h2>Find flight deals to domestic cities</h2>
+<div class="hotel-links">
+    <div>
+        <a href="https://www.expedia.co.in/London-Hotels.d178279.Travel-Guide-Hotels">Flights to Darbhanga</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Kannur.d6137013.Travel-Guide-Flights">Flights to Kannur</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Kannur.d6137013.Travel-Guide-Flights">Flights to Bareilly</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Jharsuguda.d3000386080.Travel-Guide-Flights">Flights to Jharsuguda</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Jharsuguda.d3000386080.Travel-Guide-Flights">Flights to Ajmer</a>
+    </div>
+    <div>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Jharsuguda.d3000386080.Travel-Guide-Flights">Flights to Gulbarga</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Sikkim.d6049946.Travel-Guide-Flights">Flights to Sikkim</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Gangtok.d6046709.Travel-Guide-Flights">Flights to Gangtok</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Gangtok.d6046709.Travel-Guide-Flights">Flights to Kurnool</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Gangtok.d6046709.Travel-Guide-Flights">Flights to Malvan</a>
+    </div>
+</div>
+<h2>International flights</h2>
+<div class="hotel-links">
+    <div>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Maldives.d6051084.Travel-Guide-Flights">Flights to Maldives</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Maldives.d6051084.Travel-Guide-Flights">Flights to London</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Surrey.d9759.Travel-Guide-Flights">Flights to Surrey</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-New-York.d178293.Travel-Guide-Flights">Flights to New York</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-New-York.d178293.Travel-Guide-Flights">Flights to Boracay Island</a>
+    </div>
+    <div>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Singapore.d180027.Travel-Guide-Flights">Flights to Singapore</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Fiji.d6023598.Travel-Guide-Flights">Flights to Fiji</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Pattaya.d9514.Travel-Guide-Flights">Flights to Pattaya</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Pattaya.d9514.Travel-Guide-Flights">Flights to Toronto</a><br>
+        <a href="https://www.expedia.co.in/Cheap-Flights-To-Pattaya.d9514.Travel-Guide-Flights">Flights to Hawaii Island</a>
+    </div>
+</div>
+<h2>All destinations</h2>
+<div class="hotel-links">
+    <div>
+        <a href="https://www.expedia.co.in/global/sitemap">More destinations</a><br>
+    </div>
+</div>
+    </div>
+        <div class="app-section">
+            <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_Footer.jpg" alt="xpedia app">
+            <div>
+                <h2>Go further with the Expedia app</h2>
+                <p>Save on select hotels and earn double points when you book on the app. Our app deals help you to save on trips so you can travel more and manage it all on the go.</p>
+                <p><strong>Scan the QR code with your device camera and download our app</strong></p>
+            </div>
+            <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr/27_QR_FOOTER.png" alt="QR code for downloading the Expedia app">
+        </div>
+    </div>
+
+      </div>
+      
+      <footer>
+        <div class="footer-container">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <h2>expedia group<span>™</span></h2>
+          </div>
+    
+    
+          <!-- Columns -->
+          <div class="footer-columns">
+            <!-- Company Column -->
+            <div class="footer-column">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="https://www.expediagroup.com/home/default.aspx">About</a></li>
+                <li><a href="https://careers.expediagroup.com/">Jobs</a></li>
+                <li><a href="https://apps.expediapartnercentral.com/en_US/list?utm_medium=referral&utm_source=wwwexpediacom-en_US&utm_campaign=SEO.B.google.com&utm_contentewd=pwa-header-btn&siteId=1&tpid=1&  eapid=0&langId=1033&utm_term=SEO.B.google.com&lasttouchMktgcode=SEO.B.google.com">List your property</a></li>
+                <li><a href="https://partner.expediagroup.com/en-us">Partnerships</a></li>
+                <li><a href="https://www.expedia.com/newsroom/">Newsroom</a></li>
+                <li><a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investor Relations</a></li>
+                <li><a href="https://advertising.expedia.com/getting-started/brands/expedia/?_gl=1*niegns*_gcl_au*NTUxNzQ5MDIzLjE3MzQ0NDk3OTY.">Advertising</a></li>
+                <li><a href="https://affiliates.expediagroup.com/home?locale=en_US">Affiliate Marketing</a></li>
+                <li><a href="https://www.expedia.com/p/support/feedback">Feedback</a></li>
+              </ul>
+            </div>
+    
+    
+            <!-- Explore Column -->
+            <div class="footer-column">
+              <h3>Explore</h3>
+              <ul>
+                <li><a href="https://www.expedia.com/United-States-Of-America.dx201">United States of America travel guide</a></li>
+                <li><a href="https://www.expedia.com/Destinations-In-United-States-Of-America.d201.Hotel-Destinations">Hotels in United States of America</a></li>
+                <li><a href="https://www.expedia.com/Destinations-In-United-States-Of-America.d201.Vacation-Rental-Destinations">Vacation rentals in United States of America</a></li>
+                <li><a href="https://www.expedia.com/United-States-Of-America.d201.Destination-Travel-Guides">Vacation packages in United States of America</a></li>
+                <li><a href="https://www.expedia.com/Destinations-In-United-States-Of-America.d201.Flight-Destinations">Domestic flights</a></li>
+                <li><a href="https://www.expedia.com/Destinations-In-United-States-Of-America.d201.Car-Rental-Destinations">Car rentals in United States of America</a></li>
+                <li><a href="https://www.expedia.com/Accommodations">All accommodation types</a></li>
+                <li><a href="https://www.expedia.com/one-key-cards">One Key credit cards</a></li>
+              </ul>
+            </div>
+    
+    
+            <!-- Policies Column -->
+            <div class="footer-column">
+              <h3>Policies</h3>
+              <ul>
+                <li><a href="https://www.expedia.com/legal/privacy">Privacy</a></li>
+                <li><a href="https://www.expedia.com/legal/cookies">Cookies</a></li>
+                <li><a href="https://www.expedia.com/lp/b/terms-of-service">Terms of use</a></li>
+                <li><a href="https://www.expedia.com/one-key-terms">One Key™ terms and conditions</a></li>
+                <li><a href="https://www.vrbo.com/lp/b/terms-of-service?siteid=9001001&locale=en_US&_gl=1*yzjc2g*_gcl_au*NTUxNzQ5MDIzLjE3MzQ0NDk3OTY.">Vrbo terms and conditions</a></li>
+                <li><a href="https://www.expedia.com/lp/b/accessibility-policy">Accessibility</a></li>
+                <li><a href="https://www.expedia.com/dnsmpi">Your privacy choices</a></li>
+                <li><a href="https://www.expedia.com/lp/b/content-guidelines">Content guidelines and reporting content</a></li>
+              </ul>
+            </div>
+    
+    
+            <!-- Help Column -->
+            <div class="footer-column">
+              <h3>Help</h3>
+              <ul>
+                <li><a href="https://www.expedia.com/helpcenter/">Support</a></li>
+                <li><a href="https://www.expedia.com/helpcenter/?articleId=12326">Cancel your hotel or vacation rental booking</a></li>
+                <li><a href="https://www.expedia.com/helpcenter/?articleId=12324&pwaDialog=article-dialog">Cancel your flight</a></li>
+                <li><a href="https://www.expedia.com/helpcenter/?articleId=15253&pwaDialog=article-dialog">Refund basics</a></li>
+                <li><a href="https://www.expedia.com/helpcenter/?articleId=12385&pwaDialog=article-dialog">Use an Expedia coupon</a></li>
+                <li><a href="https://www.expedia.com/helpcenter/?articleId=12386&pwaDialog=article-dialog">International travel documents</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+</html>
+<script src="script2.js"></script>
