@@ -10,7 +10,7 @@ Frontend
 
 Deployed App
 
-Live Demo: https://deployed-site.expedia-clone
+Live Demo: https://plabani07.github.io/B41_WEB-017_Code-Surgeons/
 
 Directory Structure
 
