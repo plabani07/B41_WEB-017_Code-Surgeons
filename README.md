@@ -1,10 +1,10 @@
 Expedia Clone - Project README
 
-Introduction
+#Introduction
 
 This project is a frontend-only clone of Expedia.com, developed using HTML, CSS, and JavaScript. The goal of the project is to replicate the core functionality and design of the Expedia website, offering a similar user interface and user experience.
 
-Project Type
+#Project Type
 
 Frontend
 
