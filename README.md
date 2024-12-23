@@ -24,14 +24,6 @@ expedia-clone/
 │   ├── images/
 │   ├── icons/
 
-Video Walkthrough of the Project
-
-Attach a short video walkthrough of the project demonstrating its features (1-3 minutes).
-
-Video Walkthrough of the Codebase
-
-Attach a short video walkthrough of the codebase structure and important sections (1-5 minutes).
-
 Features
 
 Responsive design for various screen sizes.
